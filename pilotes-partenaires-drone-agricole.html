@@ -1122,8 +1122,7 @@ document.addEventListener("click",async e=>{
   const rows=[
     ["Foliaire","fol",[[2,4,"Céréales<br>Colza"],[5,8,"Maïs, betterave, pomme de terre<br>Vigne, arbo, riz et légumes"],[9,11,"Colza<br>Après récolte"]]],
     ["Semis","sem",[[3,4,"Prairies<br>Luzerne"],[5,7,"Couverts avant moisson<br>15 mai – 31 juillet"],[8,11,"Couverts après récolte, fourrages<br>Céréales et enherbement"]]],
-    ["NPK","npk",[[2,4,"Azote céréales et colza<br>Blé : 1er, 2e et 3e apports"],[5,6,"Apports en végétation<br>Maïs, riz, légumes"],[7,11,"P et K après récolte<br>Selon besoin"]]],
-    ["Autres","aut",[[1,12,"<b>Cartographie toute l'année</b>Blanchiment des serres : mars à juin · Trichogrammes : mai à août"]]]
+    ["NPK","npk",[[2,4,"Azote céréales et colza<br>Blé : 1er, 2e et 3e apports"],[5,6,"Apports en végétation<br>Maïs, riz, légumes"],[7,11,"P et K après récolte<br>Selon besoin"]]]
   ];
   const now=new Date().getMonth()+1;
   let h=`<div></div>`+M.map((m,i)=>`<div class="mh${i+1===now?' now':''}" style="grid-row:1;grid-column:${i+2}">${m}</div>`).join("");
