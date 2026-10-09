@@ -831,9 +831,8 @@ blockquote b{color:var(--ink);font-weight:500}
         <div><h3>Chargeur et groupe</h3><p>Recharge de 30 à 95 % en 8 à 9 min. Le D14000iE est compact mais ne sert qu'au chargeur ; un groupe triphasé permet de brancher aussi une pompe.</p></div>
         <div><h3>RC Plus 2 et FTS</h3><p>Radiocommande à écran 7" haute luminosité, et système de coupure d'urgence exigé en catégorie spécifique.</p></div>
       </div>
-      <div class="two" style="margin-top:16px">
+      <div style="margin-top:16px">
         <div class="card"><p class="tag">Coût batterie</p><h3>Environ 0,50 € par hectare</h3><p>Un jeu de 3 batteries remplacé au bout de 15 000 ha, face à une prestation facturée 15 à 30 €/ha. Et on peut les renouveler une par une.</p></div>
-        <div class="card dark"><p class="tag">Mesuré sur nos chantiers</p><h3>T100 : 532 ha en 40 chantiers</h3><p>15 ha/h de moyenne, 2,5 ha par batterie, 8,1 min de vol utile par batterie. Relevé batterie par batterie, du 17 juin au 9 juillet.</p></div>
       </div>
     </section>
   </div>
@@ -1122,7 +1121,8 @@ document.addEventListener("click",async e=>{
   const rows=[
     ["Foliaire","fol",[[2,4,"Céréales<br>Colza"],[5,8,"Maïs, betterave, pomme de terre<br>Vigne, arbo, riz et légumes"],[9,11,"Colza<br>Après récolte"]]],
     ["Semis","sem",[[3,4,"Prairies<br>Luzerne"],[5,7,"Couverts avant moisson<br>15 mai – 31 juillet"],[8,11,"Couverts après récolte, fourrages<br>Céréales et enherbement"]]],
-    ["NPK","npk",[[2,4,"Azote céréales et colza<br>Blé : 1er, 2e et 3e apports"],[5,6,"Apports en végétation<br>Maïs, riz, légumes"],[7,11,"P et K après récolte<br>Selon besoin"]]]
+    ["NPK","npk",[[2,4,"Azote céréales et colza<br>Blé : 1er, 2e et 3e apports"],[5,6,"Apports en végétation<br>Maïs, riz, légumes"],[7,11,"P et K après récolte<br>Selon besoin"]]],
+    ["Autres","aut",[[1,12,"<b>Cartographie toute l'année</b>Blanchiment des serres : mars à juin · Trichogrammes : mai à août"]]]
   ];
   const now=new Date().getMonth()+1;
   let h=`<div></div>`+M.map((m,i)=>`<div class="mh${i+1===now?' now':''}" style="grid-row:1;grid-column:${i+2}">${m}</div>`).join("");
