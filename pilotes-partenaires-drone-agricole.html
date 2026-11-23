@@ -616,7 +616,7 @@ blockquote b{color:var(--ink);font-weight:500}
       <div class="hub">
         <div class="hub-col">
           <p class="hub-h biz">Business</p>
-          <div class="hc biz"><b>10 000 € de CA la 1re année</b><span>Environ 1 200 ha apportés, au lieu de les chercher seul.</span></div>
+          <div class="hc biz"><b>10 000 € de CA la 1re année</b><span>Environ 600 ha apportés, au lieu de les chercher seul.</span></div>
           <div class="hc biz"><b>0,70 €/km dès le départ</b><span>Vos déplacements ne grignotent plus votre marge.</span></div>
           <div class="hc biz"><b>Un portefeuille qui grandit</b><span>1 ha apporté = 1 ha de plus confié par Oligo+.</span></div>
           <div class="hc biz"><b>Formation commerciale</b><span>Pour aller chercher vos propres hectares.</span></div>
@@ -671,13 +671,13 @@ blockquote b{color:var(--ink);font-weight:500}
 
     <section>
       <div class="promise">
-        <div><b>20 000 €</b><span>de CA minimum apporté la 1re année, soit environ 1 200 ha. Un plancher, pas un plafond.</span></div>
+        <div><b>10 000 €</b><span>de CA minimum apporté la 1re année, soit environ 600 ha. Un plancher, pas un plafond.</span></div>
         <div><b>0,70 €/km</b><span>dès le départ de chez vous, pas seulement une fois sur place.</span></div>
         <div><b>1 pour 1</b><span>500 ha apportés par vous, 500 ha de plus confiés par Oligo+.</span></div>
       </div>
 
       <div class="incl">
-        <div><h3>Une activité déjà apportée</h3><p>On s'engage sur 20 000 € de chiffre d'affaires la première année. Dès que des hectares supplémentaires sont vendus dans votre secteur et que vous êtes disponible, ils vous sont confiés.</p></div>
+        <div><h3>Une activité déjà apportée</h3><p>On s'engage sur 10 000 € de chiffre d'affaires la première année. Dès que des hectares supplémentaires sont vendus dans votre secteur et que vous êtes disponible, ils vous sont confiés.</p></div>
         <div><h3>Le réglementaire, on s'en occupe</h3><p>Vous passez votre CATS. Ensuite, compte exploitant, déclarations, MANEX, dossier SORA et fiches de mission sont gérés par Oligo+.</p></div>
         <div><h3>Une saison longue</h3><p>Jusqu'à 215 jours de fenêtres d'intervention entre février et octobre : semis de couverts, nutrition foliaire, azote, prairies. Le drone ne dort pas au hangar.</p></div>
         <div><h3>Un assureur qui connaît le métier</h3><p>On vous met directement en relation avec notre assureur pour une couverture adaptée à l'activité drone.</p></div>
@@ -687,7 +687,7 @@ blockquote b{color:var(--ink);font-weight:500}
     <section style="padding-top:0">
       <h2>Année 1 pour démarrer, année 2 pour accélérer</h2>
       <div class="two" style="margin-top:24px">
-        <div class="card"><p class="tag">Année 1</p><h3>Créer une base solide</h3><p>Au minimum 20 000 € de CA apporté. Vous réalisez vos premières missions, vous prenez vos repères et on valide ensemble l'organisation terrain. Chantiers prairie en cours de saison ? Si vous êtes équipé et disponible, ils s'ajoutent.</p></div>
+        <div class="card"><p class="tag">Année 1</p><h3>Créer une base solide</h3><p>Au minimum 10 000 € de CA apporté. Vous réalisez vos premières missions, vous prenez vos repères et on valide ensemble l'organisation terrain. Chantiers prairie en cours de saison ? Si vous êtes équipé et disponible, ils s'ajoutent.</p></div>
         <div class="card dark"><p class="tag">Année 2 et suivantes</p><h3>Conserver et ajouter</h3><p>Les hectares bien réalisés l'année d'avant sont reconduits autant que possible. S'y ajoutent les nouvelles ventes Oligo+ et vos propres clients. Exemple de portefeuille développé : 4 000 ha à 20 €/ha, soit 80 000 € de CA.</p></div>
       </div>
       <p class="note">On ne promet pas artificiellement 5 000 ha à l'avance : on construit un volume réaliste et récurrent, à partir des ventes réellement sécurisées.</p>
@@ -698,7 +698,7 @@ blockquote b{color:var(--ink);font-weight:500}
       <table class="cmp">
         <thead><tr><th>Achat classique</th><th>Avec Oligo+</th></tr></thead>
         <tbody>
-          <tr><td>Vous trouvez seul vos premiers hectares</td><td>20 000 € de CA apporté dès la 1re année</td></tr>
+          <tr><td>Vous trouvez seul vos premiers hectares</td><td>10 000 € de CA apporté dès la 1re année</td></tr>
           <tr><td>Vous montez seul votre dossier SORA, AE et MANEX (environ 3 mois d'instruction DGAC)</td><td>Vous passez le CATS, on gère le reste</td></tr>
           <tr><td>Chaque déplacement grignote votre marge</td><td>0,70 €/km dès le départ pour nos missions</td></tr>
           <tr><td>Vous gérez seul la montée en charge</td><td>On construit ensemble un portefeuille récurrent</td></tr>
@@ -1137,7 +1137,7 @@ document.addEventListener("click",async e=>{
 
 /* ---------- Simulateur ---------- */
 (function(){
-  const P={ rend:7, heures:10, garanti:20000, tarif:17, drone:30000, amDrone:3, camion:0, amCamion:5,
+  const P={ rend:7, heures:10, garanti:10000, tarif:17, drone:30000, amDrone:3, camion:0, amCamion:5,
     hotel:120, essence:70, assurance:1000, sav:1000, compta:5, com:2, joursDispo:150 };
   const apports=[200,500,1000];
   const HYP=[
@@ -1205,7 +1205,7 @@ document.addEventListener("click",async e=>{
     ["Existe-t-il des aides ou des subventions ?","Pas de dispositif de financement dédié pour le moment."],
     ["Puis-je être apporteur d'affaires pour vos produits ?","Oui, c'est envisageable, notamment sur le gypse ou la gamme foliaire."],
     ["Les frais de déplacement sont-ils pris en charge ?","Oui, à 0,70 €/km dès que vous travaillez pour le réseau."],
-    ["Comment fonctionne la garantie de 20 000 € de CA ?","C'est une estimation sur environ 20 jours de travail, soit environ 1 200 ha. Elle est réservée aux premiers engagés."],
+    ["Comment fonctionne la garantie de 10 000 € de CA ?","C'est une estimation sur environ 10 jours de travail, soit environ 600 ha. Elle est réservée aux premiers engagés."],
     ["Quel est le tarif à l'hectare ?","De 15 à 20 €/ha selon la densité, la taille des parcelles et la surface."],
     ["Quel budget pour être opérationnel ?","Entre 20 000 et 30 000 € pour le pack drone complet avec le groupe électrogène."],
     ["Pourquoi limiter à 1 000 ha au départ ?","Pour avancer progressivement avec des pilotes fiables avant d'ouvrir à plus grande échelle."]]],
